@@ -22,7 +22,7 @@ def insert_png_into_word(file_path, word_doc_path):
     # 3 columns are always desired, but the number of rows is determined by the amount of pngs
     #   and the rows needs to be a multiple of three since 3 pngs can fit in a row.
     columns = 3
-    rows = (len(png_files) // 3) + 1
+    rows = (len(png_files) / 3)
     rows = math.ceil(rows)
     cells = rows * columns
 
