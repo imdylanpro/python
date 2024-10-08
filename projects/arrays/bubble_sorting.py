@@ -21,7 +21,7 @@ def main():
     print(mylist)
     mylist = bubble_sort(mylist)
     print(mylist)
+    return mylist
 
 if __name__ == "__main__":
     main()
-    bubble_sort(mylist)
