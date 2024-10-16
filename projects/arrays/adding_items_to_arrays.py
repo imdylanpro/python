@@ -69,4 +69,16 @@ print(f"Original list contents: {mylist}")
 print(f"Item that is to be removed: {mylist[0]}. ")
 mylist.remove(mylist[0])
 print(f"Modified list contents: {mylist}")
+
+# Use a for loop to iterate backward through a list, decrementing a custom 
+#   number of times.
+print(FORMATTING_STRING)
+print('Using a for loop to iterate backward down a list with a custom step.')
+print(f"Original list contents: {myintegerlist}")
+# the first number indicates the starting point, -1 is the last item in the 
+#   list. The second number indicates the number after the end point, so the 
+#   for loop will actually go to the 0 index not -1 index. The third number is 
+#   the step value, the list will derement by 1 each iteration.
+for i in range(len(myintegerlist) -1, -1, -1):
+    print(myintegerlist[i])
 print(FORMATTING_STRING)
