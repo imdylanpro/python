@@ -1,0 +1,1 @@
+"('make', 'Mazda')('model', '3s')('year', 2007)('sell_price', 5000)('purchase_price', 2500)('id_number', 0)('make', 'GMC')('model', 'Sierra')('year', 2017)('sell_price', 10000)('purchase_price', 5000)('id_number', 1)('make', 'Ford')('model', 'F150')('year', 2023)('sell_price', 21000)('purchase_price', 10000)('id_number', 2)"
