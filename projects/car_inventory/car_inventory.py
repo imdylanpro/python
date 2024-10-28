@@ -18,6 +18,19 @@ class car:
         self.purchase_price = purchase_price
         self.id_number = id_number
 
+    def prices(self):
+        """Prints the price information for the car."""
+
+        print(f"The vehicle was purchased for {self.purchase_price}, 
+              and is listed for {self.sell_price}.")
+
+    def adjust_sell_price(self, amount):
+        """Adjusts the sell price for the car by the amount input."""
+
+        print(f"The price before adjustment is {self.sell_price}.")
+        self.sell_price = self.sell_price + amount
+        print(f"The price after adjustment is {self.sell_price}.")
+
 def store_in_file(filepath, list_to_store):
     """Stores a car list into a file."""
 
@@ -42,7 +55,7 @@ def fetch_from_file(filepath):
     #   information. If empty data is attempted to be loaded a crash happens.
     if contents != '':
         contents = json.loads(contents)
-    
+    print(contents)
     return contents
 
 def define_cars():
@@ -57,9 +70,12 @@ def main_function():
             r"\data_files\car_inventory.txt")
     
     car_list = define_cars()
-    store_in_file(path, car_list)
-    contents = fetch_from_file(path)
-    print(contents)
+    # store_in_file(path, car_list)
+    # fetch_from_file(path)
+    
+    for car in car_list:
+        car.prices()
+        car.adjust_sell_price(500)
 
 if __name__ == "__main__":
     main_function()
