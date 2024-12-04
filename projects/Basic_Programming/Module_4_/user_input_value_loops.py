@@ -17,9 +17,9 @@ def main():
     maximum_of_numbers = max(numbers)
     minimum_of_numbers = min(numbers)
 
-    # Create a list that will calculate interest for every number within "numbers" 
-    #   list. Need to utilize another for loop to iterate the interest for each 
-    #   number in the list.
+    # Create a list that will calculate interest for every number within 
+    #   "numbers" list. Need to utilize another for loop to iterate the 
+    #   interest for each number in the list.
     interest_numbers = []
     for i in range(len(numbers)):
         interest_value = numbers[i] + numbers[i]*0.2
