@@ -4,13 +4,14 @@
 
 def main():
 
-    # Create a list that will house the numbers input by the user.
+    # Create a list that will house the numbers input by the user, storing them
+    #   as float values.
     numbers = []
     for i in range(5):
-        user_number = int(input('Please enter a number. '))
+        user_number = float(input('Please enter a number. '))
         numbers.append(user_number)
 
-    # Calculates the total, average, maximum, and minimum of the numbers.
+    # Calculates the total, average, maximum, and minimum of the numbers. 
     total_of_numbers = (numbers[0] + numbers[1] + numbers[2] + numbers[3] 
                         + numbers[4])
     average_of_numbers = (total_of_numbers) / len(numbers)
@@ -32,4 +33,5 @@ def main():
     print('Minimum of all numbers is:', minimum_of_numbers)
     print('List with interest on values is:', interest_numbers)
 
+# Run the main program.
 if __name__ == '__main__': main()
